@@ -15,7 +15,8 @@ const APP_ROUTES: Routes = [
     component: UsersComponent,
     children: [{ path: ":id", component: UserComponent }]
   },
-  { path: "**", component: NotFoundComponent }
+  // { path: "**", component: NotFoundComponent },
+  { path: "**", redirectTo: "" }
 ];
 
 @NgModule({
